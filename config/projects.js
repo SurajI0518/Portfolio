@@ -9,7 +9,7 @@ Portfolio.projects = {
   categoryDefaults: {
     enabled: true, text: { enabled: true, fontSize: "0.78rem", color: "#f5f5f5", fontWeight: 500 },
     background: { enabled: true, colors: ["transparent"], angle: 0, opacity: 1 },
-    hoverBackground: { enabled: true, colors: ["#3b3b3b6b"], angle: 0, opacity: 1 },
+    hoverBackground: { enabled: true, colors: ["#5f5f5f9c"], angle: 0, opacity: 1 },
     activeBackground: { enabled: true, colors: ["#dadada"], angle: 0, opacity: 1 },
     activeText: { color: "#192113" },
     icon: { enabled: false }, style: { padding: "10px 18px", borderRadius: "2px", minHeight: "44px" }
@@ -17,16 +17,16 @@ Portfolio.projects = {
   categories: [
     { enabled: true, id: "all", all: true, text: { enabled: true, value: "All work" } },
     { enabled: true, id: "shaders", text: { enabled: true, value: "Shaders & VFX" } },
-    { enabled: true, id: "tools", text: { enabled: true, value: "Tools & Pipelines" } },
+    { enabled: true, id: "tools", text: { enabled: true, value: "3D & Texturing" } },
     { enabled: true, id: "procedural", text: { enabled: true, value: "Procedural Art" } },
-    { disabled: true, id: "game-jam", text: { enabled: true, value: "Game Jam" } }
+    
   ],
   grid: { enabled: true, desktopColumns: 3, tabletColumns: 2, mobileColumns: 1, gap: "28px" },
   cardDefaults: {
     enabled: true,
-    background: { enabled: true, colors: ["#181c17"], angle: 130, opacity: 1 },
-    hoverBackground: { enabled: true, colors: ["#22291e"], angle: 130, opacity: 1 },
-    style: { border: "1px solid #30372b", borderRadius: "5px" },
+    background: { enabled: true, colors: ["#030303"], angle: 130, opacity: 1 },
+    hoverBackground: { enabled: true, colors: ["#1a1a1a"], angle: 130, opacity: 1 },
+    style: { border: "1px solid #ffffff8c", borderRadius: "5px" },
     thumbnail: { enabled: true, aspectRatio: "16 / 10", objectFit: "cover", objectPosition: "center" },
     body: { enabled: true, style: { padding: "24px" } },
     kicker: { enabled: true, color: "#8c9b7d", fontSize: "0.61rem", letterSpacing: "0.13em", fontWeight: 600 },
@@ -39,17 +39,17 @@ Portfolio.projects = {
   detail: {
     enabled: true,
     navigation: { enabled: true, top: { enabled: true }, bottom: { enabled: true }, style: {} },
-    breadcrumb: { enabled: true, separator: " > ", fontSize: "0.82rem", color: "#aebba2" },
+    breadcrumb: { enabled: true, separator: " > ", fontSize: "0.82rem", color: "#eeeeee" },
     backButton: { enabled: true, text: { enabled: true, value: "Back to projects" }, icon: { enabled: true, value: "←" }, style: { padding: "10px 16px" } },
     title: { enabled: true, fontSize: "clamp(34px, 5vw, 64px)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.04em" },
-    description: { enabled: true, fontSize: "1.05rem", color: "#a9b39f", lineHeight: 1.8 },
+    description: { enabled: true, fontSize: "1.05rem", color: "#c8c9c8", lineHeight: 1.8 },
     tags: { enabled: true },
     sectionDefaults: {
       enabled: true,
-      background: { enabled: true, colors: ["#181e16"], angle: 135, opacity: 1 },
-      style: { padding: "clamp(20px, 4vw, 48px)", borderRadius: "5px", border: "1px solid #303a29" },
+      background: { enabled: true, colors: ["#080808"], angle: 135, opacity: 1 },
+      style: { padding: "clamp(20px, 4vw, 48px)", borderRadius: "5px", border: "1px solid #d4d4d4" },
       title: { enabled: true, fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 500, lineHeight: 1.2, letterSpacing: "-0.03em" },
-      description: { enabled: true, fontSize: "0.95rem", color: "#a6b29b", whiteSpace: "pre-line" },
+      description: { enabled: true, fontSize: "0.95rem", color: "#d3d3d3", whiteSpace: "pre-line" },
       mediaGrid: { enabled: true, columns: 2, gap: "16px" },
       imageDefaults: { enabled: true, thumbnail: { enabled: true, objectFit: "cover", aspectRatio: "16 / 10" }, caption: { enabled: true, fontSize: "0.8rem", color: "#a6b29b" } },
       videoDefaults: {

@@ -41,7 +41,7 @@ Portfolio.projectContent = {
     ]
   },
   morphbound: {
-    enabled: true,
+    enabled: false,
     description: { enabled: true, value: "MorphBound is an illustrative project title. Replace this introduction with your game jam brief, role, team, and contribution." },
     sections: [
       { enabled: true, type: "image", title: { enabled: true, value: "A world between states" }, description: { enabled: true, value: "Show your game world, mechanics, and visual development here." }, mediaGrid: { columns: 1 }, background: { enabled: true, colors: ["#1d242d", "#151c19"], angle: 145, opacity: 1 }, images: [{ enabled: true, src: "assets/images/morphbound.svg", alt: "Imaginary MorphBound world", caption: { enabled: true, value: "Original vector concept / demonstration content" } }] },

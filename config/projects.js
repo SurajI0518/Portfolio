@@ -1,16 +1,16 @@
 Portfolio.projects = {
   enabled: true, id: "projects", defaultCategory: "all",
-  background: { enabled: true, colors: ["#101211"], angle: 0, opacity: 1 },
+  background: { enabled: true, colors: ["#020202"], angle: 0, opacity: 1 },
   style: {},
-  eyebrow: { enabled: true, value: "01 / SELECTED WORK", fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.14em", color: "#d4f694" },
-  title: { enabled: true, value: "Projects", fontSize: "clamp(42px, 5.3vw, 76px)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.045em" },
-  description: { enabled: true, value: "Experiments, systems, and worlds.\nA selection of what happens when art meets code.", color: "#929b8c", fontSize: "0.9rem", whiteSpace: "pre-line" },
+  eyebrow: { enabled: true, value: " SELECTED WORK", fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.14em", color: "#afafaf" },
+  title: { enabled: true, value: "Featured Work", fontSize: "clamp(42px, 5.3vw, 76px)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.045em" },
+  description: { enabled: true, value: "Experiments, systems, and worlds.\nA selection of what happens when art meets code.", color: "#8b8b8b", fontSize: "0.9rem", whiteSpace: "pre-line" },
   categoriesBar: { enabled: true, style: { gap: "8px" } },
   categoryDefaults: {
-    enabled: true, text: { enabled: true, fontSize: "0.78rem", color: "#a7afa0", fontWeight: 500 },
+    enabled: true, text: { enabled: true, fontSize: "0.78rem", color: "#f5f5f5", fontWeight: 500 },
     background: { enabled: true, colors: ["transparent"], angle: 0, opacity: 1 },
-    hoverBackground: { enabled: true, colors: ["#2c3427"], angle: 0, opacity: 1 },
-    activeBackground: { enabled: true, colors: ["#d4f694"], angle: 0, opacity: 1 },
+    hoverBackground: { enabled: true, colors: ["#3b3b3b6b"], angle: 0, opacity: 1 },
+    activeBackground: { enabled: true, colors: ["#dadada"], angle: 0, opacity: 1 },
     activeText: { color: "#192113" },
     icon: { enabled: false }, style: { padding: "10px 18px", borderRadius: "2px", minHeight: "44px" }
   },
@@ -19,7 +19,7 @@ Portfolio.projects = {
     { enabled: true, id: "shaders", text: { enabled: true, value: "Shaders & VFX" } },
     { enabled: true, id: "tools", text: { enabled: true, value: "Tools & Pipelines" } },
     { enabled: true, id: "procedural", text: { enabled: true, value: "Procedural Art" } },
-    { enabled: true, id: "game-jam", text: { enabled: true, value: "Game Jam" } }
+    { disabled: true, id: "game-jam", text: { enabled: true, value: "Game Jam" } }
   ],
   grid: { enabled: true, desktopColumns: 3, tabletColumns: 2, mobileColumns: 1, gap: "28px" },
   cardDefaults: {

@@ -3,7 +3,7 @@
 window.Portfolio = {};
 Portfolio.global = {
   enabled: true,
-  page: { title: "Your Name — Technical Artist", description: "Technical art, real-time worlds, and the tools that bring them to life.", language: "en" },
+  page: { title: "Your Name — TechnicaArtist", description: "Technical art, real-time worlds, and the tools that bring them to life.", language: "en" },
   fonts: {
     family: '"Segoe UI", Arial, sans-serif', // Change this once for ALL text.
     faces: [

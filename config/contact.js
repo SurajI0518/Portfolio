@@ -7,9 +7,9 @@ Portfolio.contact = {
   description: { enabled: true, value: "Interested in working together or discussing an opportunity? \nFeel free to reach out. I'd love to connect.", color: "#d4d4d4", fontSize: "1.1rem", whiteSpace: "pre-line" },
   buttonGroup: { enabled: true, style: { gap: "12px" } },
   buttons: [
-    { enabled: true, type: "redirect", url: "mailto:Surajsurya0518@gmail.com", text: { enabled: true, value: "Email me" }, textStyle: { color: "#ff0000c7" }, background: { enabled: true, colors: ["transparent"], angle: 0, opacity: 1 }, style: { borderColor: "#ffffff79" } },
-    { enabled: true, type: "redirect", url: "https://www.linkedin.com/in/suraj052002/", text: { enabled: true, value: "LinkedIn" }, textStyle: { color: "#1dfc00a9" }, background: { enabled: true, colors: ["transparent"], angle: 0, opacity: 1 }, style: { borderColor: "#ffffff81" } },
-    { enabled: true, type: "redirect", url: "https://github.com/SurajI0518", text: { enabled: true, value: "GitHub" }, textStyle: { color: "#0011fdcc" }, background: { enabled: true, colors: ["transparent"], angle: 0, opacity: 1 }, style: { borderColor: "#fcfcfc9a" } }
+    { enabled: true, type: "redirect", url: "mailto:Surajsurya0518@gmail.com", text: { enabled: true, value: "Email me" }, textStyle: { color: "#f1f1f1fd" }, background: { enabled: true, colors: ["transparent"], angle: 0, opacity: 1 }, style: { borderColor: "#ffffff79" } },
+    { enabled: true, type: "redirect", url: "https://www.linkedin.com/in/suraj052002/", text: { enabled: true, value: "LinkedIn" }, textStyle: { color: "#fdfdfd" }, background: { enabled: true, colors: ["transparent"], angle: 0, opacity: 1 }, style: { borderColor: "#ffffff81" } },
+    { enabled: true, type: "redirect", url: "https://github.com/SurajI0518", text: { enabled: true, value: "GitHub" }, textStyle: { color: "#ffffff" }, background: { enabled: true, colors: ["transparent"], angle: 0, opacity: 1 }, style: { borderColor: "#fcfcfc9a" } }
   ],
   footer: {
     enabled: true, style: { borderTop: "1px solid #fbfcfb62" },

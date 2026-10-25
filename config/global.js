@@ -3,7 +3,7 @@
 window.Portfolio = {};
 Portfolio.global = {
   enabled: true,
-  page: { title: "Your Name — TechnicaArtist", description: "Technical art, real-time worlds, and the tools that bring them to life.", language: "en" },
+  page: { title: "Your Name — Technical Artist", description: "Technical art, real-time worlds, and the tools that bring them to life.", language: "en" },
   fonts: {
     family: '"Segoe UI", Arial, sans-serif', // Change this once for ALL text.
     faces: [
@@ -21,8 +21,8 @@ Portfolio.global = {
   motion: { enabled: true, duration: 260, smoothScroll: true },
   buttons: {
     enabled: true,
-    background: { enabled: true, colors: ["#d4f694"], angle: 120, opacity: 1 },
-    hoverBackground: { enabled: true, colors: ["#e6ffb9"], angle: 120, opacity: 1 },
+    background: { enabled: true, colors: ["#eaece5"], angle: 120, opacity: 1 },
+    hoverBackground: { enabled: true, colors: ["#5e5e5e"], angle: 120, opacity: 1 },
     text: { enabled: true, color: "#14200e", fontSize: "0.85rem", fontWeight: 600, letterSpacing: "0.01em", lineHeight: 1.3 },
     icon: { enabled: true, value: "↗" },
     style: { padding: "16px 24px", borderRadius: "3px", borderColor: "transparent", borderWidth: "1px", borderStyle: "solid", minHeight: "48px", gap: "24px" }

@@ -1,6 +1,6 @@
 Portfolio.contact = {
   enabled: true, id: "contact",
-  background: { enabled: true, colors: ["#070707", "rgba(8, 8, 8, 0.5)"], angle: 180, opacity: 1 },
+  background: { enabled: true, colors: ["#070707e3", "rgba(8, 8, 8, 0.5)"], angle: 180, opacity: 1 },
   style: { borderTop: "1px solid #eeeeee" },
   eyebrow: { enabled: true, value: " CONTACT", color: "#f3eeee", fontSize: "0.8rem", fontWeight: 700, letterSpacing: "0.14em" },
   title: { enabled: true, value: "Let’s make\nsomething extraordinary.", fontSize: "clamp(38px, 5.2vw, 78px)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.045em", whiteSpace: "pre-line" },

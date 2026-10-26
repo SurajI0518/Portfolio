@@ -33,7 +33,7 @@ Portfolio.home = {
     },
     {
       enabled: true, id: "resume", type: "redirect", url: "assets/documents/resume-placeholder.pdf",
-      text: { enabled: true, value: "Resue" }, textStyle: { color: "#eef0e8" },
+      text: { enabled: true, value: "Resume" }, textStyle: { color: "#eef0e8" },
       background: { enabled: true, colors: ["#0a0a0a"], angle: 0, opacity: 1 },
       style: { borderColor: "#fffefe79", backdropFilter: "blur(12px)" },
       hoverBackground: { enabled: true, colors: ["#ffffff12"], angle: 0, opacity: 1 }

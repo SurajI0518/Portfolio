@@ -4,19 +4,18 @@
 Portfolio.projectContent = {
   terrain: {
     enabled: true,
-    description: { enabled: true, value: "A sample breakdown of a procedural landscape system. Replace these sections with your process, decisions, and results." },
+    description: { enabled: true, value: "Explore the real-time functionality and visual results of the shader, highlighting its key features, dynamic effects, and customization capabilities in Unity." },
     sections: [
       {
-        enabled: true, type: "image", id: "terrain-study",
+        enabled: false, type: "image", id: "terrain-study",
         title: { enabled: true, value: "Building a world from a simple idea" },
         description: { enabled: true, value: "Start with a broad silhouette, layer in detail, and give artists meaningful controls. These original vector studies stand in for your screenshots and renders." },
         images: [
-          { enabled: true, src: "assets/images/terrain.svg", alt: "Procedural terrain study", caption: { enabled: true, value: "01 — Landscape study. Click to expand." } },
-          { enabled: true, src: "assets/images/hero-terrain.svg", alt: "Wireframe landscape study", caption: { enabled: true, value: "02 — Structure and topology." } }
+          { enabled: true, src: "assets/images/Water.svg", alt: "Procedural terrain study", caption: { enabled: true, value: "01 — . Click to expand." } },   
         ]
       },
       {
-        enabled: true, type: "code", id: "terrain-code",
+        enabled: false, type: "code", id: "terrain-code",
         title: { enabled: true, value: "The building blocks" },
         description: { enabled: true, value: "An illustrative layered-noise function. Replace this with your own implementation; code is displayed as text, never executed." },
         blocks: [
@@ -26,9 +25,9 @@ Portfolio.projectContent = {
       {
         enabled: true, type: "video", id: "terrain-video",
         title: { enabled: true, value: "See it in motion" },
-        description: { enabled: true, value: "Video slot demonstration: this is an external Big Buck Bunny sample, not footage of this project. Replace the YouTube URL and thumbnail with your own work. YouTube loads only when you press play." },
+        description: { enabled: true, value: "Video slot demonstration: Watch the shader in action, showcasing its visual effects, dynamic features, and real-time customization in Unity." },
         mediaGrid: { columns: 1 },
-        videos: [{ enabled: true, url: "https://www.youtube.com/watch?v=aqz-KE-bpKQ", title: "Big Buck Bunny — demonstration video", thumbnail: { enabled: true, src: "assets/images/terrain.svg", alt: "Demo video placeholder — replace with your own thumbnail" }, caption: { enabled: true, value: "External demo video · Replace before publishing" } }]
+        videos: [{ enabled: true, url: "https://youtu.be/7dablWvO-4g", title: "Big Buck Bunny — demonstration video", thumbnail: { enabled: true, src: "assets/images/Water.svg", alt: "Demo video placeholder — replace with your own thumbnail" }, caption: { enabled: false, value: "External demo video · Replace before publishing" } }]
       }
     ]
   },

@@ -70,16 +70,16 @@ Portfolio.projects = {
   emptyMessage: { enabled: true, value: "More experiments are on the way. Explore another category.", color: "#a6b29b" },
   items: [
     {
-      enabled: true, id: "terrain", categoryIds: ["procedural", "shaders"],
-      thumbnail: { enabled: true, src: "assets/images/terrain.svg", alt: "Layered green procedural landscape" },
-      kicker: { enabled: true, value: "01 / PROCEDURAL WORLDS" },
-      title: { enabled: true, value: "Terrain, reimagined" },
-      description: { enabled: true, value: "From a field of noise to a world worth exploring. A procedural landscape study." },
-      tags: [{ enabled: true, text: { value: "Houdini" } }, { enabled: true, text: { value: "Unreal Engine" } }, { enabled: true, text: { value: "Procedural" } }]
+      enabled: true, id: "terrain", categoryIds: ["shaders"],
+      thumbnail: { enabled: true, src: "assets/images/water.svg", alt: "Layered green procedural landscape" },
+      kicker: { enabled: true, value: "01 / PROCEDURAL WATER SHADER" },
+      title: { enabled: true, value: "Customizable Water Shader" },
+      description: { enabled: true, value: "A customizable water shader with dynamic properties." },
+      tags: [{ enabled: true, text: { value: "Substance Painter" } }, { enabled: true, text: { value: "Unity Engine" } }, { enabled: true, text: { value: "Procedural" } }]
     },
     {
       enabled: true, id: "iridescence", categoryIds: ["shaders"],
-      thumbnail: { enabled: true, src: "assets/images/iridescence.svg", alt: "Iridescent material sphere" },
+      thumbnail: { enabled: true, src: "assets/images/Wind.svg", alt: "Iridescent material sphere" },
       kicker: { enabled: true, value: "02 / MATERIAL EXPLORATION" },
       title: { enabled: true, value: "Iridescence lab" },
       description: { enabled: true, value: "A play of light, layers, and shifting color. Exploring expressive real-time materials." },

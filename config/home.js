@@ -1,7 +1,7 @@
 Portfolio.home = {
   enabled: true, id: "home",
   background: { enabled: true, colors: ["#444444"], angle: 135, opacity: 1 },
-  image: { enabled: true, src: "assets/images/hero-terrain3.svg", alt: "Abstract wireframe landscape", objectFit: "cover", objectPosition: "center", opacity: 0.1
+  image: { enabled: true, src: "assets/images/Zero Dot Studio.webp", alt: "Abstract wireframe landscape", objectFit: "cover", objectPosition: "center", opacity: 0.035
 
    },
   overlay: { enabled: true, colors: ["#d4d4d400", "#000000"], angle: 180, opacity: 1 },

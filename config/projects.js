@@ -67,10 +67,10 @@ Portfolio.projects = {
       }
     }
   },
-  emptyMessage: { enabled: true, value: "More experiments are on the way. Explore another category.", color: "#a6b29b" },
+  emptyMessage: { enabled: true, value: "More experiments are on the way. Explore another category.", color: "#998c8c" },
   items: [
     {
-      enabled: true, id: "terrain", categoryIds: ["shaders"],
+      enabled: true, id: "terrain", categoryIds: ["shaders"],//PROCEDURAL WATER SHADER
       thumbnail: { enabled: true, src: "assets/images/water.svg", alt: "Layered green procedural landscape" },
       kicker: { enabled: true, value: "01 / PROCEDURAL WATER SHADER" },
       title: { enabled: true, value: "Customizable Water Shader" },
@@ -78,7 +78,7 @@ Portfolio.projects = {
       tags: [{ enabled: true, text: { value: "Substance Painter" } }, { enabled: true, text: { value: "Unity Engine" } }, { enabled: true, text: { value: "Procedural" } }]
     },
     {
-      enabled: true, id: "iridescence", categoryIds: ["shaders"],
+      enabled: true, id: "iridescence", categoryIds: ["shaders"],//Procedural 2D Wind Shader in Unity
       thumbnail: { enabled: true, src: "assets/images/Wind.svg", alt: "Iridescent material sphere" },
       kicker: { enabled: true, value: "02 / PROCEDURAL WIND SHADER " },
       title: { enabled: true, value: "Procedural 2D Wind Shader in Unity" },
@@ -87,44 +87,77 @@ Portfolio.projects = {
       tags: [{ enabled: true, text: { value: "Photoshiop" } }, { enabled: true, text: { value: "Unity Engine" } },  { enabled: true, text: { value: "Shader" } }]
     },
     {
-      enabled: true, id: "morphbound", categoryIds: [ "shaders"],
+      enabled: true, id: "morphbound", categoryIds: [ "shaders"],//Advanced Triplanar Mapping in Unity Shader Graph
+      thumbnail: { enabled: true, src: "assets/images/Mountain.svg", alt: "Stylized luminous portal in a geometric landscape" },
+      kicker: { enabled: true, value: "03 / PROCEDURAL TRIPLANAR MAPPING SHADER" },
+      title: { enabled: true, value: " Advanced Triplanar Mapping in Unity Shader Graph"},
+      description: { enabled: true, value: "Procedural Dissolve and Wind Shader in Unity." },
+      tags: [{ enabled: true, text: { value: "unity Engine" } }, { enabled: true, text: { value: "Blender" } }, { enabled: true, text: { value: "Shader Graph" } }]
+    },
+    {
+      enabled: true, id: "morphbound", categoryIds: [ "shaders"],//Dissolve Shader in Unity
       thumbnail: { enabled: true, src: "assets/images/Dissolve.svg", alt: "Stylized luminous portal in a geometric landscape" },
-      kicker: { enabled: true, value: "03 / GAME JAM" },
+      kicker: { enabled: true, value: "04 / DISSOLVE SHADER" },
       title: { enabled: true, value: "Dissolve Shader in Unity" },
-      description: { enabled: true, value: "Procedural Dissolve and Water Shader in Unity." },
+      description: { enabled: true, value: "Procedural Dissolve and Wind Shader in Unity." },
       tags: [{ enabled: true, text: { value: "unity Engine" } }, { enabled: true, text: { value: "Photoshop" } }, { enabled: true, text: { value: "Game Jam" } }]
+    },
+     {
+      enabled: true, id: "morphbound", categoryIds: [ "shaders"],//CROSSHATCH SHADER Shader in Unity
+      thumbnail: { enabled: true, src: "assets/images/Outline.svg", alt: "Stylized luminous portal in a geometric landscape" },
+      kicker: { enabled: true, value: "05 / OUTLINE SHADER" },
+      title: { enabled: true, value: "Outline Shader in Unity" },
+      description: { enabled: true, value: "Procedural Outline Shader in Unity." },
+      tags: [{ enabled: true, text: { value: "unity Engine" } }, { enabled: true, text: { value: "Shader Graph" } }, { enabled: true, text: { value: "" } }]
+    },
+    {
+      enabled: true, id: "morphbound", categoryIds: [ "shaders"],//CROSSHATCH SHADER Shader in Unity
+      thumbnail: { enabled: true, src: "assets/images/CrossHatching.svg", alt: "Stylized luminous portal in a geometric landscape" },
+      kicker: { enabled: true, value: "06 /  CROSSHATCH SHADER" },
+      title: { enabled: true, value: "CROSSHATCH SHADER in Unity" },
+      description: { enabled: true, value: "Procedural CROSSHATCH SHADER in Unity." },
+      tags: [{ enabled: true, text: { value: "unity Engine" } }, { enabled: true, text: { value: "Shader Graph" } }, { enabled: true, text: { value: "" } }]
     },
     {
       enabled: true, id: "scatter", categoryIds: ["procedural"],
       thumbnail: { enabled: true, src: "assets/images/scatter.svg", alt: "Procedurally scattered forms on an isometric grid" },
-      kicker: { enabled: true, value: "04 / ARTIST TOOLS" },
+      kicker: { enabled: true, value: "05 / ARTIST TOOLS" },
       title: { enabled: true, value: "Scatter studio" },
       description: { enabled: true, value: "Small tools, bigger possibilities. An artist-friendly approach to building environments." },
       tags: [{ enabled: true, text: { value: "Python" } }, { enabled: true, text: { value: "Houdini" } }]
     },
     {
-      enabled: true, id: "particles", categoryIds: ["shaders"],
-      thumbnail: { enabled: true, src: "assets/images/particles.svg", alt: "Warm flowing particle trails" },
-      kicker: { enabled: true, value: "05 / REAL-TIME VFX" },
-      title: { enabled: true, value: "Fields of motion" },
+      enabled: true, id: "particles", categoryIds: ["shaders"],//ORB vfx in Unity
+      thumbnail: { enabled: true, src: "assets/images/Orb.svg", alt: "Warm flowing particle trails" }, 
+      kicker: { enabled: true, value: "06 / REAL-TIME VFX" },
+      title: { enabled: true, value: "ORB vfx in Unity" },
       description: { enabled: true, value: "Finding rhythm in the unpredictable. A study of particles, flow, and motion." },
       tags: [{ enabled: true, text: { value: "Niagara" } }, { enabled: true, text: { value: "VFX" } }]
     },
     {
       enabled: true, id: "pipeline", categoryIds: ["tools"],
       thumbnail: { enabled: true, src: "assets/images/pipeline.svg", alt: "Connected nodes forming a procedural tool graph" },
-      kicker: { enabled: true, value: "06 / PIPELINE DEVELOPMENT" },
+      kicker: { enabled: true, value: "07 / PIPELINE DEVELOPMENT" },
       title: { enabled: true, value: "A better workflow" },
       description: { enabled: true, value: "Less repetition, more creation. Connecting the steps between idea and engine." },
       tags: [{ enabled: true, text: { value: "Python" } }, { enabled: true, text: { value: "Pipeline" } }]
     },
     {
       enabled: true, id: "pipeline", categoryIds: ["tools"],
-      thumbnail: { enabled: true, src: "assets/images/pipeline.svg", alt: "Connected nodes forming a procedural tool graph" },
-      kicker: { enabled: true, value: "06 / PIPELINE DEVELOPMENT" },
+      thumbnail: { enabled: true, src: "assets/images/Wreath Render.svg", alt: "Connected nodes forming a procedural tool graph" },
+      kicker: { enabled: true, value: "08 / PIPELINE DEVELOPMENT" },
       title: { enabled: true, value: "A better workflow" },
       description: { enabled: true, value: "Less repetition, more creation. Connecting the steps between idea and engine." },
       tags: [{ enabled: true, text: { value: "Python" } }, { enabled: true, text: { value: "Pipeline" } }]
-    }
+    },
+    {
+      enabled: true, id: "pipeline", categoryIds: ["tools"],// modeling and texturing Wreath 
+      thumbnail: { enabled: true, src: "assets/images/pipeline.svg", alt: "Connected nodes forming a procedural tool graph" },
+      kicker: { enabled: true, value: "09 / PIPELINE DEVELOPMENT" },
+      title: { enabled: true, value: "A better workflow" },
+      description: { enabled: true, value: "Less repetition, more creation. Connecting the steps between idea and engine." },
+      tags: [{ enabled: true, text: { value: "Python" } }, { enabled: true, text: { value: "Pipeline" } }]
+    },
+
   ]
 };

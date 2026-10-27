@@ -59,6 +59,46 @@ Portfolio.projectContent = {
         videos: [{ enabled: true, url: "https://youtu.be/4KV15ENQ8oU", title: "Demo video", thumbnail: { enabled: true, src: "assets/images/Dissolve.svg", alt: "Demo video placeholder — replace with your own thumbnail" }, caption: { enabled: false, value: "External demo video · Replace before publishing" } }]
       }
     ]
+    
+  },
+  morphbound: {// Advanced Triplanar Mapping in Unity Shader Graph
+    enabled: true,
+    description: { enabled: true, value: "Advanced Triplanar Shader that blends between two textures, using a snow-covered rock surface." },
+    sections: [
+      {
+        enabled: true, type: "video", id: "terrain-video",
+        title: { enabled: true, value: "See it in motion" },
+        description: { enabled: true, value: "Video slot demonstration: Watch the shader in action, showcasing its visual effects, dynamic features, and real-time customization in Unity." },
+        mediaGrid: { columns: 1 },
+        videos: [{ enabled: true, url: "https://youtu.be/4KV15ENQ8oU", title: "Demo video", thumbnail: { enabled: true, src: "assets/images/Dissolve.svg", alt: "Demo video placeholder — replace with your own thumbnail" }, caption: { enabled: false, value: "External demo video · Replace before publishing" } }]
+      }
+    ]
+  },
+   morphbound: {// Outlinein Shader in Unity Shader Graph
+    enabled: true,
+    description: { enabled: true, value: "Advanced Triplanar Shader that blends between two textures, using a snow-covered rock surface." },
+    sections: [
+      {
+        enabled: true, type: "video", id: "terrain-video",
+        title: { enabled: true, value: "See it in motion" },
+        description: { enabled: true, value: "Video slot demonstration: Watch the shader in action, showcasing its visual effects, dynamic features, and real-time customization in Unity." },
+        mediaGrid: { columns: 1 },
+        videos: [{ enabled: true, url: "https://youtu.be/LPBcILNy0-s", title: "Demo video", thumbnail: { enabled: true, src: "assets/images/Outline.svg", alt: "Demo video placeholder — replace with your own thumbnail" }, caption: { enabled: false, value: "External demo video · Replace before publishing" } }]
+      }
+    ]
+  },
+   morphbound: {// CrossHatching Shader in Unity Shader Graph
+    enabled: true,
+    description: { enabled: true, value: "Crosshatching Shader in Unity Shader Graph to achieve a stylized hand-drawn look using procedural patterns and layered lines for artistic shading.." },
+    sections: [
+      {
+        enabled: true, type: "video", id: "terrain-video",
+        title: { enabled: true, value: "See it in motion" },
+        description: { enabled: true, value: "Video slot demonstration: Watch the shader in action, showcasing its visual effects, dynamic features, and real-time customization in Unity." },
+        mediaGrid: { columns: 1 },
+        videos: [{ enabled: true, url: "https://youtu.be/OsPriVRG34A", title: "Demo video", thumbnail: { enabled: true, src: "assets/images/CrossHatching.svg", alt: "Demo video placeholder — replace with your own thumbnail" }, caption: { enabled: false, value: "External demo video · Replace before publishing" } }]
+      }
+    ]
   },
   scatter: {
     enabled: true,
@@ -68,15 +108,30 @@ Portfolio.projectContent = {
       { enabled: true, type: "code", title: { enabled: true, value: "Repeatable by design" }, description: { enabled: true, value: "An illustrative seeded point generator. A stable seed makes iteration reproducible." }, blocks: [{ enabled: true, name: { enabled: true, value: "scatter.py" }, language: "python", code: "import random\n\ndef scatter_points(count, seed=42):\n    rng = random.Random(seed)\n    return [(rng.uniform(-1, 1), rng.uniform(-1, 1))\n            for _ in range(count)]" }] }
     ]
   },
-  particles: {
-    enabled: true, description: { enabled: true, value: "A sample visual effects study. Replace the artwork with captures from your own real-time effects." },
-    sections: [{ enabled: true, type: "image", title: { enabled: true, value: "Finding the flow" }, description: { enabled: true, value: "Break down the force fields, timing, and color choices that give the effect its character." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/particles.svg", alt: "Flowing particle field" }] }]
+  
+  particles: { //ORB vfx in Unity
+    enabled: true, description: { enabled: true, value: "Created a stylized Orb effect in Unity using custom shaders and particle systems, combining glowing visuals and dynamic particle effects to create an immersive energy orb." },
+    sections: [
+      {
+        enabled: true, type: "video", id: "terrain-video",
+        title: { enabled: true, value: "See it in motion" },
+        description: { enabled: true, value: "Video slot demonstration: Watch the shader in action, showcasing its visual effects, dynamic features, and real-time customization in Unity." },
+        mediaGrid: { columns: 1 },
+        videos: [{ enabled: true, url: "https://youtu.be/LPxqjXroyGg", title: "Demo video", thumbnail: { enabled: true, src: "assets/images/Orb.svg", alt: "Demo video placeholder — replace with your own thumbnail" }, caption: { enabled: false, value: "External demo video · Replace before publishing" } }]
+      }
+    
+    ]
   },
-  pipeline: {
+
+  
+  pipeline: {//3D modeling And Texturing (Wreath)
     enabled: true, description: { enabled: true, value: "A sample pipeline project. Describe the handoff between your DCC tool, validation step, and game engine." },
     sections: [
+      { enabled: true, type: "image", title: { enabled: true, value: "Connect the creative process" }, description: { enabled: true, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Wreath Render.svg", alt: "Connected procedural nodes" }] },
       { enabled: true, type: "image", title: { enabled: true, value: "Connect the creative process" }, description: { enabled: true, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/pipeline.svg", alt: "Connected procedural nodes" }] },
-      { enabled: true, type: "code", title: { enabled: true, value: "Validate before export" }, description: { enabled: true, value: "An illustrative validation utility. Document inputs and error cases alongside your code." }, blocks: [{ enabled: true, name: { enabled: true, value: "validate.py" }, language: "python", code: 'def validate_asset(asset):\n    errors = []\n    if not asset.name.startswith("SM_"):\n        errors.append("Use the SM_ naming prefix.")\n    if not asset.materials:\n        errors.append("Assign at least one material.")\n    return errors' }] }
+      { enabled: true, type: "image", title: { enabled: true, value: "Connect the creative process" }, description: { enabled: true, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/pipeline.svg", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: true, value: "Connect the creative process" }, description: { enabled: true, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/pipeline.svg", alt: "Connected procedural nodes" }] },
+      { enabled: false, type: "code", title: { enabled: true, value: "Validate before export" }, description: { enabled: true, value: "An illustrative validation utility. Document inputs and error cases alongside your code." }, blocks: [{ enabled: true, name: { enabled: true, value: "validate.py" }, language: "python", code: 'def validate_asset(asset):\n    errors = []\n    if not asset.name.startswith("SM_"):\n        errors.append("Use the SM_ naming prefix.")\n    if not asset.materials:\n        errors.append("Assign at least one material.")\n    return errors' }] }
     ]
   }
 };

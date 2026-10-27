@@ -47,7 +47,7 @@ Portfolio.projectContent = {
       
     ]
   },
-  morphbound: {// Disolve Shader in Unity
+  morphbound: {// Disolve and Wind Shader in Unity
     enabled: true,
     description: { enabled: true, value: "Combined procedural Wind and Dissolve effects in Unity Shader Graph to create dynamic 2D sprite animations with customizable wind movement and smooth dissolve transitions." },
     sections: [

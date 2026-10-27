@@ -47,7 +47,7 @@ Portfolio.projectContent = {
       
     ]
   },
-  morphbound: {// Disolve and Wind Shader in Unity
+  DisolveWindShader: {// Disolve and Wind Shader in Unity
     enabled: true,
     description: { enabled: true, value: "Combined procedural Wind and Dissolve effects in Unity Shader Graph to create dynamic 2D sprite animations with customizable wind movement and smooth dissolve transitions." },
     sections: [
@@ -61,7 +61,7 @@ Portfolio.projectContent = {
     ]
     
   },
-  morphbound: {// Advanced Triplanar Mapping in Unity Shader Graph
+  AdvancedTriplanarMapping: {// Advanced Triplanar Mapping in Unity Shader Graph
     enabled: true,
     description: { enabled: true, value: "Advanced Triplanar Shader that blends between two textures, using a snow-covered rock surface." },
     sections: [
@@ -70,11 +70,11 @@ Portfolio.projectContent = {
         title: { enabled: true, value: "See it in motion" },
         description: { enabled: true, value: "Video slot demonstration: Watch the shader in action, showcasing its visual effects, dynamic features, and real-time customization in Unity." },
         mediaGrid: { columns: 1 },
-        videos: [{ enabled: true, url: "https://youtu.be/4KV15ENQ8oU", title: "Demo video", thumbnail: { enabled: true, src: "assets/images/Dissolve.svg", alt: "Demo video placeholder — replace with your own thumbnail" }, caption: { enabled: false, value: "External demo video · Replace before publishing" } }]
+        videos: [{ enabled: true, url: "https://youtu.be/eT03UL3Gfvs", title: "Demo video", thumbnail: { enabled: true, src: "assets/images/Mountain.svg", alt: "Demo video placeholder — replace with your own thumbnail" }, caption: { enabled: false, value: "External demo video · Replace before publishing" } }]
       }
     ]
   },
-   morphbound: {// Outlinein Shader in Unity Shader Graph
+   OutlineinShader: {// Outlinein Shader in Unity Shader Graph
     enabled: true,
     description: { enabled: true, value: "Advanced Triplanar Shader that blends between two textures, using a snow-covered rock surface." },
     sections: [
@@ -87,7 +87,7 @@ Portfolio.projectContent = {
       }
     ]
   },
-   morphbound: {// CrossHatching Shader in Unity Shader Graph
+   CrossHatchingShader: {// CrossHatching Shader in Unity Shader Graph
     enabled: true,
     description: { enabled: true, value: "Crosshatching Shader in Unity Shader Graph to achieve a stylized hand-drawn look using procedural patterns and layered lines for artistic shading.." },
     sections: [
@@ -125,13 +125,87 @@ Portfolio.projectContent = {
 
   
   pipeline: {//3D modeling And Texturing (Wreath)
-    enabled: true, description: { enabled: true, value: "A sample pipeline project. Describe the handoff between your DCC tool, validation step, and game engine." },
+    enabled: true, description: { enabled: true, value: "A selection of game-ready 3D assets created with a focus on optimized geometry, PBR texturing, and high-quality materials for real-time rendering." },
     sections: [
-      { enabled: true, type: "image", title: { enabled: true, value: "Connect the creative process" }, description: { enabled: true, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Wreath Render.svg", alt: "Connected procedural nodes" }] },
-      { enabled: true, type: "image", title: { enabled: true, value: "Connect the creative process" }, description: { enabled: true, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/pipeline.svg", alt: "Connected procedural nodes" }] },
-      { enabled: true, type: "image", title: { enabled: true, value: "Connect the creative process" }, description: { enabled: true, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/pipeline.svg", alt: "Connected procedural nodes" }] },
-      { enabled: true, type: "image", title: { enabled: true, value: "Connect the creative process" }, description: { enabled: true, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/pipeline.svg", alt: "Connected procedural nodes" }] },
-      { enabled: false, type: "code", title: { enabled: true, value: "Validate before export" }, description: { enabled: true, value: "An illustrative validation utility. Document inputs and error cases alongside your code." }, blocks: [{ enabled: true, name: { enabled: true, value: "validate.py" }, language: "python", code: 'def validate_asset(asset):\n    errors = []\n    if not asset.name.startswith("SM_"):\n        errors.append("Use the SM_ naming prefix.")\n    if not asset.materials:\n        errors.append("Assign at least one material.")\n    return errors' }] }
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Wreath Render.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Wreath_Diffuse.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Wreath Normal.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Wreath WireFrame.webp", alt: "Connected procedural nodes" }] },
+      { enabled: false, type: "code", title: { enabled: false, value: "Validate before export" }, description: { enabled: false, value: "An illustrative validation utility. Document inputs and error cases alongside your code." }, blocks: [{ enabled: true, name: { enabled: true, value: "validate.py" }, language: "python", code: 'def validate_asset(asset):\n    errors = []\n    if not asset.name.startswith("SM_"):\n        errors.append("Use the SM_ naming prefix.")\n    if not asset.materials:\n        errors.append("Assign at least one material.")\n    return errors' }] }
     ]
-  }
+  },
+
+  pipeline: {//3D modeling And Texturing (Toster)
+    enabled: true, description: { enabled: true, value: "A selection of game-ready 3D assets created with a focus on optimized geometry, PBR texturing, and high-quality materials for real-time rendering." },
+    sections: [
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Toster Render.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Toster Diffuse.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Toster Normal.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Toster WireFrame.webp", alt: "Connected procedural nodes" }] },
+      { enabled: false, type: "code", title: { enabled: false, value: "Validate before export" }, description: { enabled: false, value: "An illustrative validation utility. Document inputs and error cases alongside your code." }, blocks: [{ enabled: true, name: { enabled: true, value: "validate.py" }, language: "python", code: 'def validate_asset(asset):\n    errors = []\n    if not asset.name.startswith("SM_"):\n        errors.append("Use the SM_ naming prefix.")\n    if not asset.materials:\n        errors.append("Assign at least one material.")\n    return errors' }] }
+    ]
+  },
+
+   pipeline: {//3D modeling And Texturing (Toster)
+    enabled: true, description: { enabled: true, value: "A selection of game-ready 3D assets created with a focus on optimized geometry, PBR texturing, and high-quality materials for real-time rendering." },
+    sections: [
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Natural Plate Render.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Natural Plate Normal.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Natural Plate Render.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Natural Plate Wireframe.webp", alt: "Connected procedural nodes" }] },
+      { enabled: false, type: "code", title: { enabled: false, value: "Validate before export" }, description: { enabled: false, value: "An illustrative validation utility. Document inputs and error cases alongside your code." }, blocks: [{ enabled: true, name: { enabled: true, value: "validate.py" }, language: "python", code: 'def validate_asset(asset):\n    errors = []\n    if not asset.name.startswith("SM_"):\n        errors.append("Use the SM_ naming prefix.")\n    if not asset.materials:\n        errors.append("Assign at least one material.")\n    return errors' }] }
+    ]
+  },
+
+   pipeline: {//3D modeling And Texturing (Flower)
+    enabled: true, description: { enabled: true, value: "A selection of game-ready 3D assets created with a focus on optimized geometry, PBR texturing, and high-quality materials for real-time rendering." },
+    sections: [
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Flower Render.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Flower Diffuse.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Flower Normal.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Flower Wireframe.webp", alt: "Connected procedural nodes" }] },
+      { enabled: false, type: "code", title: { enabled: false, value: "Validate before export" }, description: { enabled: false, value: "An illustrative validation utility. Document inputs and error cases alongside your code." }, blocks: [{ enabled: true, name: { enabled: true, value: "validate.py" }, language: "python", code: 'def validate_asset(asset):\n    errors = []\n    if not asset.name.startswith("SM_"):\n        errors.append("Use the SM_ naming prefix.")\n    if not asset.materials:\n        errors.append("Assign at least one material.")\n    return errors' }] }
+    ]
+  },
+
+   pipeline: {//3D modeling And Texturing (Chair)
+    enabled: true, description: { enabled: true, value: "A selection of game-ready 3D assets created with a focus on optimized geometry, PBR texturing, and high-quality materials for real-time rendering." },
+    sections: [
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Chair Render.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Chair Diffuse.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Chair Normal.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Chair WireFrame.webp", alt: "Connected procedural nodes" }] },
+      { enabled: false, type: "code", title: { enabled: false, value: "Validate before export" }, description: { enabled: false, value: "An illustrative validation utility. Document inputs and error cases alongside your code." }, blocks: [{ enabled: true, name: { enabled: true, value: "validate.py" }, language: "python", code: 'def validate_asset(asset):\n    errors = []\n    if not asset.name.startswith("SM_"):\n        errors.append("Use the SM_ naming prefix.")\n    if not asset.materials:\n        errors.append("Assign at least one material.")\n    return errors' }] }
+    ]
+  },
+
+   pipeline: {//3D modeling And Texturing (Moss)
+    enabled: true, description: { enabled: true, value: "A selection of game-ready 3D assets created with a focus on optimized geometry, PBR texturing, and high-quality materials for real-time rendering." },
+    sections: [
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Moss render.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Moss wireframe.webp", alt: "Connected procedural nodes" }] },  
+      { enabled: false, type: "code", title: { enabled: false, value: "Validate before export" }, description: { enabled: false, value: "An illustrative validation utility. Document inputs and error cases alongside your code." }, blocks: [{ enabled: true, name: { enabled: true, value: "validate.py" }, language: "python", code: 'def validate_asset(asset):\n    errors = []\n    if not asset.name.startswith("SM_"):\n        errors.append("Use the SM_ naming prefix.")\n    if not asset.materials:\n        errors.append("Assign at least one material.")\n    return errors' }] }
+    ]
+  },
+
+  pipeline: {//3D modeling And Texturing (ToyHouse)
+    enabled: true, description: { enabled: true, value: "A selection of game-ready 3D assets created with a focus on optimized geometry, PBR texturing, and high-quality materials for real-time rendering." },
+    sections: [
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/ToyHouse Render01.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/ToyHouse Render 01.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/ToyHouse Wireframe.webp", alt: "Connected procedural nodes" }] },
+      { enabled: false, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Chair WireFrame.webp", alt: "Connected procedural nodes" }] },
+      { enabled: false, type: "code", title: { enabled: false, value: "Validate before export" }, description: { enabled: false, value: "An illustrative validation utility. Document inputs and error cases alongside your code." }, blocks: [{ enabled: true, name: { enabled: true, value: "validate.py" }, language: "python", code: 'def validate_asset(asset):\n    errors = []\n    if not asset.name.startswith("SM_"):\n        errors.append("Use the SM_ naming prefix.")\n    if not asset.materials:\n        errors.append("Assign at least one material.")\n    return errors' }] }
+    ]
+  },
+
+  pipeline: {//3D modeling And Texturing (Witch)
+    enabled: true, description: { enabled: true, value: "A selection of game-ready 3D assets created with a focus on optimized geometry, PBR texturing, and high-quality materials for real-time rendering." },
+    sections: [
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/witch Render01.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Witch Render02.webp", alt: "Connected procedural nodes" }] },  
+      { enabled: false, type: "code", title: { enabled: false, value: "Validate before export" }, description: { enabled: false, value: "An illustrative validation utility. Document inputs and error cases alongside your code." }, blocks: [{ enabled: true, name: { enabled: true, value: "validate.py" }, language: "python", code: 'def validate_asset(asset):\n    errors = []\n    if not asset.name.startswith("SM_"):\n        errors.append("Use the SM_ naming prefix.")\n    if not asset.materials:\n        errors.append("Assign at least one material.")\n    return errors' }] }
+    ]
+  },
 };
+

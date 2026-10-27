@@ -248,6 +248,8 @@
       card.dataset.project = item.id;
       if (enabled(c.thumbnail)) {
         const thumb = el('div', 'card-thumbnail', card);
+        // The slot owns the card ratio; the image always fits fully inside it.
+        thumb.style.aspectRatio = c.thumbnail.aspectRatio || '16 / 10';
         picture(c.thumbnail, thumb);
       }
       if (enabled(c.body)) {
@@ -317,7 +319,9 @@
       const expandable = enabled(G.lightbox) && enabled(c.lightbox);
       const wrap = el(expandable ? 'button' : 'div', 'image-trigger', figure);
       if (expandable) { wrap.type = 'button'; wrap.setAttribute('aria-label', `Expand ${c.alt || 'image'}`); }
-      picture(merge(c, c.thumbnail), wrap);
+      const imageConfig = merge(c, c.thumbnail);
+      wrap.style.aspectRatio = imageConfig.aspectRatio || "16 / 10";
+      picture(imageConfig, wrap);
       if (expandable) wrap.addEventListener('click', () => openLightbox(c, wrap));
     }
     text('figcaption', c.caption, figure);

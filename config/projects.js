@@ -27,7 +27,7 @@ Portfolio.projects = {
     background: { enabled: true, colors: ["#030303"], angle: 130, opacity: 1 },
     hoverBackground: { enabled: true, colors: ["#1a1a1a"], angle: 130, opacity: 1 },
     style: { border: "1px solid #ffffff8c", borderRadius: "5px" },
-    thumbnail: { enabled: true, aspectRatio: "16 / 10", objectFit: "cover", objectPosition: "center" },
+    thumbnail: { enabled: true, aspectRatio: "16 / 10", objectFit: "contain", objectPosition: "center" },
     body: { enabled: true, style: { padding: "24px" } },
     kicker: { enabled: true, color: "#8c9b7d", fontSize: "0.61rem", letterSpacing: "0.13em", fontWeight: 600 },
     title: { enabled: true, color: "#edf0e7", fontSize: "clamp(21px, 1.7vw, 27px)", fontWeight: 500, lineHeight: 1.2, letterSpacing: "-0.025em" },
@@ -87,7 +87,7 @@ Portfolio.projects = {
       tags: [{ enabled: true, text: { value: "Photoshiop" } }, { enabled: true, text: { value: "Unity Engine" } },  { enabled: true, text: { value: "Shader" } }]
     },
     {
-      enabled: true, id: "morphbound", categoryIds: [ "shaders"],//Advanced Triplanar Mapping in Unity Shader Graph
+      enabled: true, id: "AdvancedTriplanarMapping", categoryIds: [ "shaders"],//Advanced Triplanar Mapping in Unity Shader Graph
       thumbnail: { enabled: true, src: "assets/images/Mountain.svg", alt: "Stylized luminous portal in a geometric landscape" },
       kicker: { enabled: true, value: "03 / PROCEDURAL TRIPLANAR MAPPING SHADER" },
       title: { enabled: true, value: " Advanced Triplanar Mapping in Unity Shader Graph"},
@@ -95,12 +95,12 @@ Portfolio.projects = {
       tags: [{ enabled: true, text: { value: "unity Engine" } }, { enabled: true, text: { value: "Blender" } }, { enabled: true, text: { value: "Shader Graph" } }]
     },
     {
-      enabled: true, id: "morphbound", categoryIds: [ "shaders"],//Dissolve Shader in Unity
+      enabled: true, id: "DisolveWindShader", categoryIds: [ "shaders"],//Dissolve Shader in Unity
       thumbnail: { enabled: true, src: "assets/images/Dissolve.svg", alt: "Stylized luminous portal in a geometric landscape" },
       kicker: { enabled: true, value: "04 / DISSOLVE SHADER" },
       title: { enabled: true, value: "Dissolve Shader in Unity" },
       description: { enabled: true, value: "Procedural Dissolve and Wind Shader in Unity." },
-      tags: [{ enabled: true, text: { value: "unity Engine" } }, { enabled: true, text: { value: "Photoshop" } }, { enabled: true, text: { value: "Game Jam" } }]
+      tags: [{ enabled: true, text: { value: "unity Engine" } }, { enabled: true, text: { value: "Photoshop" } }, { enabled: true, text: { value: "Photoshop" } }]
     },
      {
       enabled: true, id: "morphbound", categoryIds: [ "shaders"],//CROSSHATCH SHADER Shader in Unity
@@ -121,7 +121,7 @@ Portfolio.projects = {
     {
       enabled: true, id: "scatter", categoryIds: ["procedural"],
       thumbnail: { enabled: true, src: "assets/images/scatter.svg", alt: "Procedurally scattered forms on an isometric grid" },
-      kicker: { enabled: true, value: "05 / ARTIST TOOLS" },
+      kicker: { enabled: true, value: "07 / ARTIST TOOLS" },
       title: { enabled: true, value: "Scatter studio" },
       description: { enabled: true, value: "Small tools, bigger possibilities. An artist-friendly approach to building environments." },
       tags: [{ enabled: true, text: { value: "Python" } }, { enabled: true, text: { value: "Houdini" } }]
@@ -129,35 +129,91 @@ Portfolio.projects = {
     {
       enabled: true, id: "particles", categoryIds: ["shaders"],//ORB vfx in Unity
       thumbnail: { enabled: true, src: "assets/images/Orb.svg", alt: "Warm flowing particle trails" }, 
-      kicker: { enabled: true, value: "06 / REAL-TIME VFX" },
+      kicker: { enabled: true, value: "08 / REAL-TIME VFX" },
       title: { enabled: true, value: "ORB vfx in Unity" },
       description: { enabled: true, value: "Finding rhythm in the unpredictable. A study of particles, flow, and motion." },
       tags: [{ enabled: true, text: { value: "Niagara" } }, { enabled: true, text: { value: "VFX" } }]
     },
     {
-      enabled: true, id: "pipeline", categoryIds: ["tools"],
-      thumbnail: { enabled: true, src: "assets/images/pipeline.svg", alt: "Connected nodes forming a procedural tool graph" },
-      kicker: { enabled: true, value: "07 / PIPELINE DEVELOPMENT" },
-      title: { enabled: true, value: "A better workflow" },
-      description: { enabled: true, value: "Less repetition, more creation. Connecting the steps between idea and engine." },
-      tags: [{ enabled: true, text: { value: "Python" } }, { enabled: true, text: { value: "Pipeline" } }]
+      enabled: true, id: "pipeline", categoryIds: ["tools"],//modeling and texturing Natural Plate 
+      thumbnail: { enabled: true, src: "assets/images/Flower Render.webp", alt: "Connected nodes forming a procedural tool graph" },
+      kicker: { enabled: true, value: "09 /3D Modeling & Texturing" },
+      title: { enabled: true, value: "Flower Asset" },
+      description: { enabled: true, value: "A showcase of 3D models and game assets, highlighting my approach to modeling, texturing, materials, and visual presentation." },
+      tags: [{ enabled: true, text: { value: "Blender,Maya," } }, { enabled: true, text: { value: "Substance Painter,Photoshop" } }, { enabled: true, text: { value: "Vray" } }]
     },
     {
-      enabled: true, id: "pipeline", categoryIds: ["tools"],
-      thumbnail: { enabled: true, src: "assets/images/Wreath Render.svg", alt: "Connected nodes forming a procedural tool graph" },
-      kicker: { enabled: true, value: "08 / PIPELINE DEVELOPMENT" },
-      title: { enabled: true, value: "A better workflow" },
-      description: { enabled: true, value: "Less repetition, more creation. Connecting the steps between idea and engine." },
-      tags: [{ enabled: true, text: { value: "Python" } }, { enabled: true, text: { value: "Pipeline" } }]
-    },
+      enabled: true, id: "pipeline", categoryIds: ["tools"],//modeling and texturing Natural Plate 
+      thumbnail: { enabled: true, src: "assets/images/Natural Plate Render.webp", alt: "Connected nodes forming a procedural tool graph" },
+      kicker: { enabled: true, value: "10 / 3D Modeling & Texturing" },
+      title: { enabled: true, value: "Natural plate" },
+      description: { enabled: true, value: "A showcase of 3D models and game assets, highlighting my approach to modeling, texturing, materials, and visual presentation" },
+        tags: [{ enabled: true, text: { value: "Blender,Maya,Zbrush" } }, { enabled: true, text: { value: "Substance Painter,Photoshop" } }, { enabled: true, text: { value: "Vray" } }]
+      },
     {
       enabled: true, id: "pipeline", categoryIds: ["tools"],// modeling and texturing Wreath 
-      thumbnail: { enabled: true, src: "assets/images/pipeline.svg", alt: "Connected nodes forming a procedural tool graph" },
-      kicker: { enabled: true, value: "09 / PIPELINE DEVELOPMENT" },
-      title: { enabled: true, value: "A better workflow" },
-      description: { enabled: true, value: "Less repetition, more creation. Connecting the steps between idea and engine." },
-      tags: [{ enabled: true, text: { value: "Python" } }, { enabled: true, text: { value: "Pipeline" } }]
+      thumbnail: { enabled: true, src: "assets/images/Wreath Render.webp", alt: "Connected nodes forming a procedural tool graph" },
+      kicker: { enabled: true, value: "11 / 3D Modeling & Texturing" },
+      title: { enabled: true, value: "Wreath Asset" },
+      description: { enabled: true, value: "A showcase of 3D models and game assets, highlighting my approach to modeling, texturing, materials, and visual presentation." },
+      tags: [{ enabled: true, text: { value: "Blender,maya" } }, { enabled: true, text: { value: "Substance Painter,Photoshop" } }, { enabled: true, text: { value: "Vray" } }]
     },
+
+    {
+      enabled: true, id: "pipeline", categoryIds: ["tools"],// modeling and texturing Toster  
+      thumbnail: { enabled: true, src: "assets/images/Toster Render.webp", alt: "Connected nodes forming a procedural tool graph" },
+      kicker: { enabled: true, value: "12 / 3D Modeling & Texturing" },
+      title: { enabled: true, value: "Toster Asset" },
+      description: { enabled: true, value: "A showcase of 3D models and game assets, highlighting my approach to modeling, texturing, materials, and visual presentation." },
+      tags: [{ enabled: true, text: { value: "Blender,maya" } }, { enabled: true, text: { value: "Substance Painter,Photoshop" } }, { enabled: true, text: { value: "Vray" } }]
+    },
+
+    {
+      enabled: true, id: "pipeline", categoryIds: ["tools"],// modeling and texturing Chair  
+      thumbnail: { enabled: true, src: "assets/images/Chair Render.webp", alt: "Connected nodes forming a procedural tool graph" },
+      kicker: { enabled: true, value: "13 / 3D Modeling & Texturing" },
+      title: { enabled: true, value: "Chair Asset" },
+      description: { enabled: true, value: "A showcase of 3D models and game assets, highlighting my approach to modeling, texturing, materials, and visual presentation." },
+      tags: [{ enabled: true, text: { value: "Blender,maya" } }, { enabled: true, text: { value: "Substance Painter,Photoshop" } }, { enabled: true, text: { value: "Vray" } }]
+    },
+
+    {
+      enabled: true, id: "pipeline", categoryIds: ["tools"],// modeling and texturing Moss  
+      thumbnail: { enabled: true, src: "assets/images/Moss render.webp", alt: "Connected nodes forming a procedural tool graph" },
+      kicker: { enabled: true, value: "14 / 3D Modeling & Texturing" },
+      title: { enabled: true, value: "Moss Asset" },
+      description: { enabled: true, value: "A showcase of 3D models and game assets, highlighting my approach to modeling, texturing, materials, and visual presentation." },
+      tags: [{ enabled: true, text: { value: "Blender,maya" } }, { enabled: true, text: { value: "Substance Painter,Photoshop" } }, { enabled: true, text: { value: "Vray" } }]
+    },
+
+    {
+      enabled: true, id: "pipeline", categoryIds: ["tools"],// modeling and texturing ToyHouse  
+      thumbnail: { enabled: true, src: "assets/images/ToyHouse Render01.webp", alt: "Connected nodes forming a procedural tool graph" },
+      kicker: { enabled: true, value: "15 / 3D Modeling & Texturing" },
+      title: { enabled: true, value: "ToyHouse Asset" },
+      description: { enabled: true, value: "A showcase of 3D models and game assets, highlighting my approach to modeling, texturing, materials, and visual presentation." },
+      tags: [{ enabled: true, text: { value: "Blender,maya" } }, { enabled: true, text: { value: "Substance Painter,Photoshop" } }, { enabled: true, text: { value: "Vray" } }]
+    },
+
+    {
+      enabled: true, id: "pipeline", categoryIds: ["tools"],// modeling and texturing Plant  
+      thumbnail: { enabled: true, src: "assets/images/plant Render 01.webp", alt: "Connected nodes forming a procedural tool graph" },
+      kicker: { enabled: true, value: "16 / 3D Modeling & Texturing" },
+      title: { enabled: true, value: "Plant Asset" },
+      description: { enabled: true, value: "A showcase of 3D models and game assets, highlighting my approach to modeling, texturing, materials, and visual presentation." },
+      tags: [{ enabled: true, text: { value: "Blender,maya" } }, { enabled: true, text: { value: "Substance Painter,Photoshop" } }, { enabled: true, text: { value: "Vray" } }]
+    },
+
+     {
+      enabled: true, id: "pipeline", categoryIds: ["tools"],// modeling and texturing witch  
+      thumbnail: { enabled: true, src: "assets/images/witch Render01.webp", alt: "Connected nodes forming a procedural tool graph" },
+      kicker: { enabled: true, value: "17 / 3D Modeling & Texturing" },
+      title: { enabled: true, value: "Witch Asset" },
+      description: { enabled: true, value: "A showcase of 3D models and game assets, highlighting my approach to modeling, texturing, materials, and visual presentation." },
+      tags: [{ enabled: true, text: { value: "Blender,Maya,ZBrush" } }, { enabled: true, text: { value: "Substance Painter,Photoshop" } }, { enabled: true, text: { value: "Vray" } }]
+    },
+
+
 
   ]
 };

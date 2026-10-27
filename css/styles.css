@@ -47,9 +47,10 @@ section:focus, h3:focus, main:focus { outline: none; }
 .project-card { overflow: hidden; display: flex; flex-direction: column; transition: transform var(--duration), border-color var(--duration); }
 .project-card:hover { transform: translateY(-5px); }
 .project-card:focus-within { outline: 2px solid var(--focus); outline-offset: 5px; }
-.card-thumbnail { overflow: hidden; }
-.card-thumbnail img { transition: transform 600ms; }
-.project-card:hover .card-thumbnail img { transform: scale(1.035); }
+.card-thumbnail { overflow: hidden; flex-shrink: 0; }
+.card-thumbnail picture { display: block; width: 100%; height: 100%; }
+.card-thumbnail img { display: block; width: 100% !important; height: 100% !important; max-width: 100%; max-height: 100%; aspect-ratio: auto !important; object-fit: contain !important; object-position: center !important; transform: none !important; }
+.project-card:hover .card-thumbnail img { transform: none; }
 .card-body { flex: 1; display: flex; flex-direction: column; }
 .card-kicker { margin-bottom: 14px; }
 .card-title-line { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
@@ -72,6 +73,8 @@ section:focus, h3:focus, main:focus { outline: none; }
 .code-grid { grid-template-columns: minmax(0, 1fr); }
 .media-image, .media-video { min-width: 0; }
 .image-trigger { display: block; width: 100%; border: 0; padding: 0; background: transparent; overflow: hidden; border-radius: var(--radius); cursor: zoom-in; }
+.media-image .image-trigger picture { display: block; width: 100%; height: 100%; }
+.media-image .image-trigger img { display: block; width: 100% !important; height: 100% !important; max-width: 100%; max-height: 100%; aspect-ratio: auto !important; object-fit: contain !important; object-position: center !important; transform: none !important; }
 figcaption { margin-top: 12px; }
 .video-stage { position: relative; background: #0d120c; border-radius: var(--radius); overflow: hidden; display: grid; place-items: center; }
 .video-stage picture { position: absolute; inset: 0; }

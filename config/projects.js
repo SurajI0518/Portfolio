@@ -103,7 +103,7 @@ Portfolio.projects = {
       tags: [{ enabled: true, text: { value: "unity Engine" } }, { enabled: true, text: { value: "Photoshop" } }, { enabled: true, text: { value: "Photoshop" } }]
     },
      {
-      enabled: true, id: "morphbound", categoryIds: [ "shaders"],//CROSSHATCH SHADER Shader in Unity
+      enabled: true, id: "OutlineinShader", categoryIds: [ "shaders"],//Outline SHADER Shader in Unity
       thumbnail: { enabled: true, src: "assets/images/Outline.svg", alt: "Stylized luminous portal in a geometric landscape" },
       kicker: { enabled: true, value: "05 / OUTLINE SHADER" },
       title: { enabled: true, value: "Outline Shader in Unity" },
@@ -111,21 +111,23 @@ Portfolio.projects = {
       tags: [{ enabled: true, text: { value: "unity Engine" } }, { enabled: true, text: { value: "Shader Graph" } }, { enabled: true, text: { value: "" } }]
     },
     {
-      enabled: true, id: "morphbound", categoryIds: [ "shaders"],//CROSSHATCH SHADER Shader in Unity
+      enabled: true, id: "CrossHatchingShader", categoryIds: [ "shaders"],//CROSSHATCH SHADER Shader in Unity
       thumbnail: { enabled: true, src: "assets/images/CrossHatching.svg", alt: "Stylized luminous portal in a geometric landscape" },
       kicker: { enabled: true, value: "06 /  CROSSHATCH SHADER" },
       title: { enabled: true, value: "CROSSHATCH SHADER in Unity" },
       description: { enabled: true, value: "Procedural CROSSHATCH SHADER in Unity." },
       tags: [{ enabled: true, text: { value: "unity Engine" } }, { enabled: true, text: { value: "Shader Graph" } }, { enabled: true, text: { value: "" } }]
     },
+
     {
-      enabled: true, id: "scatter", categoryIds: ["procedural"],
-      thumbnail: { enabled: true, src: "assets/images/scatter.svg", alt: "Procedurally scattered forms on an isometric grid" },
-      kicker: { enabled: true, value: "07 / ARTIST TOOLS" },
-      title: { enabled: true, value: "Scatter studio" },
-      description: { enabled: true, value: "Small tools, bigger possibilities. An artist-friendly approach to building environments." },
-      tags: [{ enabled: true, text: { value: "Python" } }, { enabled: true, text: { value: "Houdini" } }]
-    },
+      enabled: true, id: "FresnelShader", categoryIds: [ "shaders"],//FRESNEL SHADER Shader in Unity
+      thumbnail: { enabled: true, src: "assets/images/Fresnel Shader.svg", alt: "Stylized luminous portal in a geometric landscape" },
+      kicker: { enabled: true, value: "0 /  FRESNEL SHADER" },
+      title: { enabled: true, value: "FRESNEL SHADER in Unity" },
+      description: { enabled: true, value: " A customizable Fresnel Shader in Unity featuring glowing edges, adjustable colors, and real-time property controls." },
+      tags: [{ enabled: true, text: { value: "unity Engine" } }, { enabled: true, text: { value: "Shader Graph" } }, { enabled: true, text: { value: "" } }]
+    }, 
+
     {
       enabled: true, id: "particles", categoryIds: ["shaders"],//ORB vfx in Unity
       thumbnail: { enabled: true, src: "assets/images/Orb.svg", alt: "Warm flowing particle trails" }, 
@@ -135,7 +137,7 @@ Portfolio.projects = {
       tags: [{ enabled: true, text: { value: "Niagara" } }, { enabled: true, text: { value: "VFX" } }]
     },
     {
-      enabled: true, id: "pipeline", categoryIds: ["tools"],//modeling and texturing Natural Plate 
+      enabled: true, id: "Flower", categoryIds: ["tools"],//modeling and texturing Flower Asset
       thumbnail: { enabled: true, src: "assets/images/Flower Render.webp", alt: "Connected nodes forming a procedural tool graph" },
       kicker: { enabled: true, value: "09 /3D Modeling & Texturing" },
       title: { enabled: true, value: "Flower Asset" },
@@ -143,7 +145,7 @@ Portfolio.projects = {
       tags: [{ enabled: true, text: { value: "Blender,Maya," } }, { enabled: true, text: { value: "Substance Painter,Photoshop" } }, { enabled: true, text: { value: "Vray" } }]
     },
     {
-      enabled: true, id: "pipeline", categoryIds: ["tools"],//modeling and texturing Natural Plate 
+      enabled: true, id: "plate", categoryIds: ["tools"],//modeling and texturing Natural Plate 
       thumbnail: { enabled: true, src: "assets/images/Natural Plate Render.webp", alt: "Connected nodes forming a procedural tool graph" },
       kicker: { enabled: true, value: "10 / 3D Modeling & Texturing" },
       title: { enabled: true, value: "Natural plate" },
@@ -151,7 +153,7 @@ Portfolio.projects = {
         tags: [{ enabled: true, text: { value: "Blender,Maya,Zbrush" } }, { enabled: true, text: { value: "Substance Painter,Photoshop" } }, { enabled: true, text: { value: "Vray" } }]
       },
     {
-      enabled: true, id: "pipeline", categoryIds: ["tools"],// modeling and texturing Wreath 
+      enabled: true, id: "Wreath", categoryIds: ["tools"],// modeling and texturing Wreath 
       thumbnail: { enabled: true, src: "assets/images/Wreath Render.webp", alt: "Connected nodes forming a procedural tool graph" },
       kicker: { enabled: true, value: "11 / 3D Modeling & Texturing" },
       title: { enabled: true, value: "Wreath Asset" },
@@ -160,7 +162,7 @@ Portfolio.projects = {
     },
 
     {
-      enabled: true, id: "pipeline", categoryIds: ["tools"],// modeling and texturing Toster  
+      enabled: true, id: "Toster", categoryIds: ["tools"],// modeling and texturing Toster  
       thumbnail: { enabled: true, src: "assets/images/Toster Render.webp", alt: "Connected nodes forming a procedural tool graph" },
       kicker: { enabled: true, value: "12 / 3D Modeling & Texturing" },
       title: { enabled: true, value: "Toster Asset" },
@@ -169,7 +171,7 @@ Portfolio.projects = {
     },
 
     {
-      enabled: true, id: "pipeline", categoryIds: ["tools"],// modeling and texturing Chair  
+      enabled: true, id: "Chair", categoryIds: ["tools"],// modeling and texturing Chair  
       thumbnail: { enabled: true, src: "assets/images/Chair Render.webp", alt: "Connected nodes forming a procedural tool graph" },
       kicker: { enabled: true, value: "13 / 3D Modeling & Texturing" },
       title: { enabled: true, value: "Chair Asset" },
@@ -178,7 +180,7 @@ Portfolio.projects = {
     },
 
     {
-      enabled: true, id: "pipeline", categoryIds: ["tools"],// modeling and texturing Moss  
+      enabled: true, id: "Moss", categoryIds: ["tools"],// modeling and texturing Moss  
       thumbnail: { enabled: true, src: "assets/images/Moss render.webp", alt: "Connected nodes forming a procedural tool graph" },
       kicker: { enabled: true, value: "14 / 3D Modeling & Texturing" },
       title: { enabled: true, value: "Moss Asset" },
@@ -187,7 +189,7 @@ Portfolio.projects = {
     },
 
     {
-      enabled: true, id: "pipeline", categoryIds: ["tools"],// modeling and texturing ToyHouse  
+      enabled: true, id: "ToyHouse", categoryIds: ["tools"],// modeling and texturing ToyHouse  
       thumbnail: { enabled: true, src: "assets/images/ToyHouse Render01.webp", alt: "Connected nodes forming a procedural tool graph" },
       kicker: { enabled: true, value: "15 / 3D Modeling & Texturing" },
       title: { enabled: true, value: "ToyHouse Asset" },
@@ -196,7 +198,7 @@ Portfolio.projects = {
     },
 
     {
-      enabled: true, id: "pipeline", categoryIds: ["tools"],// modeling and texturing Plant  
+      enabled: true, id: "Plant", categoryIds: ["tools"],// modeling and texturing Plant  
       thumbnail: { enabled: true, src: "assets/images/plant Render 01.webp", alt: "Connected nodes forming a procedural tool graph" },
       kicker: { enabled: true, value: "16 / 3D Modeling & Texturing" },
       title: { enabled: true, value: "Plant Asset" },
@@ -205,7 +207,7 @@ Portfolio.projects = {
     },
 
      {
-      enabled: true, id: "pipeline", categoryIds: ["tools"],// modeling and texturing witch  
+      enabled: true, id: "Witch", categoryIds: ["tools"],// modeling and texturing witch  
       thumbnail: { enabled: true, src: "assets/images/witch Render01.webp", alt: "Connected nodes forming a procedural tool graph" },
       kicker: { enabled: true, value: "17 / 3D Modeling & Texturing" },
       title: { enabled: true, value: "Witch Asset" },
@@ -213,7 +215,25 @@ Portfolio.projects = {
       tags: [{ enabled: true, text: { value: "Blender,Maya,ZBrush" } }, { enabled: true, text: { value: "Substance Painter,Photoshop" } }, { enabled: true, text: { value: "Vray" } }]
     },
 
+    {
+      enabled: true, id: "PavingStones01", categoryIds: ["procedural"],
+      thumbnail: { enabled: true, src: "assets/images/Paving Stones01.webp", alt: "Procedurally scattered forms on an isometric grid" },
+      kicker: { enabled: true, value: "07 / ARTIST TOOLS" },
+      title: { enabled: true, value: "Scatter studio" },
+      description: { enabled: true, value: "hand-painted paving stone texture and a seamless tiling material, focusing on surface details and a stylized look for 3D environments." },
+      tags: [{ enabled: true, text: { value: "Substance " } }, { enabled: true, text: { value: "Photoshop" } }]
+    },
 
+
+
+    {
+      enabled: true, id: "PavingStones02", categoryIds: ["procedural"],
+      thumbnail: { enabled: true, src: "assets/images/Paving Stones 02.webp", alt: "Procedurally scattered forms on an isometric grid" },
+      kicker: { enabled: true, value: "07 / ARTIST TOOLS" },
+      title: { enabled: true, value: "Scatter studio" },
+      description: { enabled: true, value: "hand-painted paving stone texture and a seamless tiling material, focusing on surface details and a stylized look for 3D environments." },
+      tags: [{ enabled: true, text: { value: "Substance " } }, { enabled: true, text: { value: "Photoshop" } }]
+    },
 
   ]
 };

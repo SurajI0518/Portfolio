@@ -89,7 +89,7 @@ Portfolio.projectContent = {
   },
    CrossHatchingShader: {// CrossHatching Shader in Unity Shader Graph
     enabled: true,
-    description: { enabled: true, value: "Crosshatching Shader in Unity Shader Graph to achieve a stylized hand-drawn look using procedural patterns and layered lines for artistic shading.." },
+    description: { enabled: true, value: "Crosshatching Shader in Unity Shader Graph to achieve a stylized hand-drawn look using procedural patterns and layered lines for artistic shading." },
     sections: [
       {
         enabled: true, type: "video", id: "terrain-video",
@@ -100,12 +100,52 @@ Portfolio.projectContent = {
       }
     ]
   },
-  scatter: {
+  
+FresnelShader: {// Fresnel Shader in Unity Shader Graph
     enabled: true,
-    description: { enabled: true, value: "A sample artist-tool case study. Explain the manual task you improved and how an artist uses the finished tool." },
+    description: { enabled: true, value: "A customizable Fresnel Shader created in Unity to produce glowing edge effects. Features adjustable colors, glow intensity, and other properties for flexible real-time visual customization." },
     sections: [
-      { enabled: true, type: "image", title: { enabled: true, value: "Controlled variation" }, description: { enabled: true, value: "Show the interface, distribution controls, and results side by side." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/scatter.svg", alt: "Procedural scatter study" }] },
-      { enabled: true, type: "code", title: { enabled: true, value: "Repeatable by design" }, description: { enabled: true, value: "An illustrative seeded point generator. A stable seed makes iteration reproducible." }, blocks: [{ enabled: true, name: { enabled: true, value: "scatter.py" }, language: "python", code: "import random\n\ndef scatter_points(count, seed=42):\n    rng = random.Random(seed)\n    return [(rng.uniform(-1, 1), rng.uniform(-1, 1))\n            for _ in range(count)]" }] }
+      {
+        enabled: true, type: "video", id: "terrain-video",
+        title: { enabled: true, value: "See it in motion" },
+        description: { enabled: true, value: "Video slot demonstration: Watch the shader in action, showcasing its visual effects, dynamic features, and real-time customization in Unity." },
+        mediaGrid: { columns: 1 },
+        videos: [{ enabled: true, url: "https://youtu.be/XqgrpbNyz3o", title: "Demo video", thumbnail: { enabled: true, src: "assets/images/Fresnel Shader.svg", alt: "Demo video placeholder — replace with your own thumbnail" }, caption: { enabled: false, value: "External demo video · Replace before publishing" } }]
+      }
+    ]
+  },
+
+  PavingStones01: {
+    enabled: true,
+    description: { enabled: true, value: "hand-painted paving stone texture and a seamless tiling material, focusing on surface details and a stylized look for 3D environments." },
+    sections: [
+      { enabled: true, type: "image", title: { enabled: false, value: "Controlled variation" }, description: { enabled: false, value: "Show the interface, distribution controls, and results side by side." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Paving Stones01.webp", alt: "Procedural scatter study" }] },
+      { enabled: false, type: "code", title: { enabled: true, value: "Repeatable by design" }, description: { enabled: false, value: "An illustrative seeded point generator. A stable seed makes iteration reproducible." }, blocks: [{ enabled: true, name: { enabled: true, value: "scatter.py" }, language: "python", code: "import random\n\ndef scatter_points(count, seed=42):\n    rng = random.Random(seed)\n    return [(rng.uniform(-1, 1), rng.uniform(-1, 1))\n            for _ in range(count)]" }] },
+    
+      {
+        enabled: true, type: "video", id: "terrain-video",
+        title: { enabled: true, value: "See it in motion" },
+        description: { enabled: true, value: "Video slot demonstration: Watch the material in action, showcasing its visual." },
+        mediaGrid: { columns: 1 },
+        videos: [{ enabled: true, url: "https://youtu.be/v27_ELBwbf8", title: "Demo video", thumbnail: { enabled: true, src: "assets/images/Paving Stones01.webp", alt: "Demo video placeholder — replace with your own thumbnail" }, caption: { enabled: false, value: "External demo video · Replace before publishing" } }]
+      }
+    ]
+  },
+
+  PavingStones02: {
+    enabled: true,
+    description: { enabled: true, value: "hand-painted paving stone texture and developed a seamless tiling material for versatile use in 3D environments." },
+    sections: [
+      { enabled: true, type: "image", title: { enabled: false, value: "Controlled variation" }, description: { enabled: false, value: "Show the interface, distribution controls, and results side by side." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Paving Stones 02.webp", alt: "Procedural scatter study" }] },
+      { enabled: false, type: "code", title: { enabled: true, value: "Repeatable by design" }, description: { enabled: false, value: "An illustrative seeded point generator. A stable seed makes iteration reproducible." }, blocks: [{ enabled: true, name: { enabled: true, value: "scatter.py" }, language: "python", code: "import random\n\ndef scatter_points(count, seed=42):\n    rng = random.Random(seed)\n    return [(rng.uniform(-1, 1), rng.uniform(-1, 1))\n            for _ in range(count)]" }] },
+    
+      {
+        enabled: true, type: "video", id: "terrain-video",
+        title: { enabled: true, value: "See it in motion" },
+        description: { enabled: true, value: "Video slot demonstration: Watch the material in action, showcasing its visual." },
+        mediaGrid: { columns: 1 },
+        videos: [{ enabled: true, url: "https://youtu.be/F_L-1x0S3PU", title: "Demo video", thumbnail: { enabled: true, src: "assets/images/Paving Stones 02.webp", alt: "Demo video placeholder — replace with your own thumbnail" }, caption: { enabled: false, value: "External demo video · Replace before publishing" } }]
+      }
     ]
   },
   
@@ -124,7 +164,7 @@ Portfolio.projectContent = {
   },
 
   
-  pipeline: {//3D modeling And Texturing (Wreath)
+  Wreath: {//3D modeling And Texturing (Wreath)
     enabled: true, description: { enabled: true, value: "A selection of game-ready 3D assets created with a focus on optimized geometry, PBR texturing, and high-quality materials for real-time rendering." },
     sections: [
       { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Wreath Render.webp", alt: "Connected procedural nodes" }] },
@@ -135,7 +175,7 @@ Portfolio.projectContent = {
     ]
   },
 
-  pipeline: {//3D modeling And Texturing (Toster)
+  Toster: {//3D modeling And Texturing (Toster)
     enabled: true, description: { enabled: true, value: "A selection of game-ready 3D assets created with a focus on optimized geometry, PBR texturing, and high-quality materials for real-time rendering." },
     sections: [
       { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Toster Render.webp", alt: "Connected procedural nodes" }] },
@@ -146,7 +186,7 @@ Portfolio.projectContent = {
     ]
   },
 
-   pipeline: {//3D modeling And Texturing (Toster)
+   plate: {//3D modeling And Texturing (plate)
     enabled: true, description: { enabled: true, value: "A selection of game-ready 3D assets created with a focus on optimized geometry, PBR texturing, and high-quality materials for real-time rendering." },
     sections: [
       { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Natural Plate Render.webp", alt: "Connected procedural nodes" }] },
@@ -157,7 +197,7 @@ Portfolio.projectContent = {
     ]
   },
 
-   pipeline: {//3D modeling And Texturing (Flower)
+   Flower: {//3D modeling And Texturing (Flower)
     enabled: true, description: { enabled: true, value: "A selection of game-ready 3D assets created with a focus on optimized geometry, PBR texturing, and high-quality materials for real-time rendering." },
     sections: [
       { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Flower Render.webp", alt: "Connected procedural nodes" }] },
@@ -168,7 +208,7 @@ Portfolio.projectContent = {
     ]
   },
 
-   pipeline: {//3D modeling And Texturing (Chair)
+   Chair: {//3D modeling And Texturing (Chair)
     enabled: true, description: { enabled: true, value: "A selection of game-ready 3D assets created with a focus on optimized geometry, PBR texturing, and high-quality materials for real-time rendering." },
     sections: [
       { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Chair Render.webp", alt: "Connected procedural nodes" }] },
@@ -179,7 +219,7 @@ Portfolio.projectContent = {
     ]
   },
 
-   pipeline: {//3D modeling And Texturing (Moss)
+   Moss: {//3D modeling And Texturing (Moss)
     enabled: true, description: { enabled: true, value: "A selection of game-ready 3D assets created with a focus on optimized geometry, PBR texturing, and high-quality materials for real-time rendering." },
     sections: [
       { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Moss render.webp", alt: "Connected procedural nodes" }] },
@@ -188,7 +228,7 @@ Portfolio.projectContent = {
     ]
   },
 
-  pipeline: {//3D modeling And Texturing (ToyHouse)
+  ToyHouse: {//3D modeling And Texturing (ToyHouse)
     enabled: true, description: { enabled: true, value: "A selection of game-ready 3D assets created with a focus on optimized geometry, PBR texturing, and high-quality materials for real-time rendering." },
     sections: [
       { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/ToyHouse Render01.webp", alt: "Connected procedural nodes" }] },
@@ -199,11 +239,19 @@ Portfolio.projectContent = {
     ]
   },
 
-  pipeline: {//3D modeling And Texturing (Witch)
+  Witch: {//3D modeling And Texturing (Witch)
     enabled: true, description: { enabled: true, value: "A selection of game-ready 3D assets created with a focus on optimized geometry, PBR texturing, and high-quality materials for real-time rendering." },
     sections: [
       { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/witch Render01.webp", alt: "Connected procedural nodes" }] },
       { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/Witch Render02.webp", alt: "Connected procedural nodes" }] },  
+      { enabled: false, type: "code", title: { enabled: false, value: "Validate before export" }, description: { enabled: false, value: "An illustrative validation utility. Document inputs and error cases alongside your code." }, blocks: [{ enabled: true, name: { enabled: true, value: "validate.py" }, language: "python", code: 'def validate_asset(asset):\n    errors = []\n    if not asset.name.startswith("SM_"):\n        errors.append("Use the SM_ naming prefix.")\n    if not asset.materials:\n        errors.append("Assign at least one material.")\n    return errors' }] }
+    ]
+  },
+  Plant: {//3D modeling And Texturing (plant)
+    enabled: true, description: { enabled: true, value: "A selection of game-ready 3D assets created with a focus on optimized geometry, PBR texturing, and high-quality materials for real-time rendering." },
+    sections: [
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/plant Render 01.webp", alt: "Connected procedural nodes" }] },
+      { enabled: true, type: "image", title: { enabled: false, value: "Connect the creative process" }, description: { enabled: false, value: "Use diagrams and captures to communicate where your tool fits in the production process." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/plant Render Wireframe.webp", alt: "Connected procedural nodes" }] },  
       { enabled: false, type: "code", title: { enabled: false, value: "Validate before export" }, description: { enabled: false, value: "An illustrative validation utility. Document inputs and error cases alongside your code." }, blocks: [{ enabled: true, name: { enabled: true, value: "validate.py" }, language: "python", code: 'def validate_asset(asset):\n    errors = []\n    if not asset.name.startswith("SM_"):\n        errors.append("Use the SM_ naming prefix.")\n    if not asset.materials:\n        errors.append("Assign at least one material.")\n    return errors' }] }
     ]
   },

@@ -1,6 +1,6 @@
 Portfolio.home = {
   enabled: true, id: "home",
-  background: { enabled: true, colors: ["#151c18"], angle: 135, opacity: 1 },
+  background: { enabled: true, colors: ["#444444"], angle: 135, opacity: 1 },
   image: { enabled: true, src: "assets/images/hero-terrain3.svg", alt: "Abstract wireframe landscape", objectFit: "cover", objectPosition: "center", opacity: 0.1
 
    },
@@ -27,7 +27,7 @@ Portfolio.home = {
         background: { enabled: true, colors: ["#0a0a0a"], angle: 0, opacity: 1 },
         hoverBackground: { enabled: true, colors: ["#3a3a3aa8"], angle: 0, opacity: 1 },
         style: { borderColor: "#fffefe7a", backdropFilter: "blur(12px)" },
-        content: { enabled: true, value: "I'm a Technical Artist with a background in 3D art & 2D art and a passion for game development.I have over 3.4 years of experience in 3D modeling, texturing and Rendring, materials, and lighting and.\n\n Currently pursuing an M.Sc. in Game Technology, I'm focusing on Unity, Shader Graph, shader development, real-time VFX, and graphics optimization. " },
+        content: { enabled: true, value: "I'm a Technical Artist with a background in 3D and 2D art and a passion for game development. With over 3.4 years of experience in 3D modeling, texturing, materials, lighting, and rendering, I've worked on projects for brands like Target, Walmart and Amazon, creating 3D assets and materials & Renders, including gaming and AR/VR assets.\n\n Currently pursuing an M.Sc. in Game Technology, I'm focusing on Unity, Shader Graph, shader development, real-time VFX, and graphics optimization. " },
         buttons: [{ enabled: true, type: "navigate", target: "contact", text: { enabled: true, value: "Let’s connect" } }]
       }
     },

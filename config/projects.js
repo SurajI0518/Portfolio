@@ -80,22 +80,22 @@ Portfolio.projects = {
     {
       enabled: true, id: "iridescence", categoryIds: ["shaders"],
       thumbnail: { enabled: true, src: "assets/images/Wind.svg", alt: "Iridescent material sphere" },
-      kicker: { enabled: true, value: "02 / MATERIAL EXPLORATION" },
-      title: { enabled: true, value: "Iridescence lab" },
-      description: { enabled: true, value: "A play of light, layers, and shifting color. Exploring expressive real-time materials." },
+      kicker: { enabled: true, value: "02 / PROCEDURAL WIND SHADER " },
+      title: { enabled: true, value: "Procedural 2D Wind Shader in Unity" },
+      description: { enabled: true, value: "A customizable Wind shader with dynamic properties." },
       background: { enabled: true, colors: ["#20221c", "#161b17"], angle: 145, opacity: 1 },
-      tags: [{ enabled: true, text: { value: "HLSL" } }, { enabled: true, text: { value: "Shaders" } }]
+      tags: [{ enabled: true, text: { value: "Photoshiop" } }, { enabled: true, text: { value: "Unity Engine" } },  { enabled: true, text: { value: "Shader" } }]
     },
     {
-      enabled: true, id: "morphbound", categoryIds: ["game-jam", "shaders"],
-      thumbnail: { enabled: true, src: "assets/images/morphbound.svg", alt: "Stylized luminous portal in a geometric landscape" },
+      enabled: true, id: "morphbound", categoryIds: [ "shaders"],
+      thumbnail: { enabled: true, src: "assets/images/Dissolve.svg", alt: "Stylized luminous portal in a geometric landscape" },
       kicker: { enabled: true, value: "03 / GAME JAM" },
-      title: { enabled: true, value: "MorphBound" },
-      description: { enabled: true, value: "An imagined world in constant transformation. A sample game project breakdown." },
-      tags: [{ enabled: true, text: { value: "Unreal Engine" } }, { enabled: true, text: { value: "C++" } }, { enabled: true, text: { value: "Game Jam" } }]
+      title: { enabled: true, value: "Dissolve Shader in Unity" },
+      description: { enabled: true, value: "Procedural Dissolve and Water Shader in Unity." },
+      tags: [{ enabled: true, text: { value: "unity Engine" } }, { enabled: true, text: { value: "Photoshop" } }, { enabled: true, text: { value: "Game Jam" } }]
     },
     {
-      enabled: true, id: "scatter", categoryIds: ["tools", "procedural"],
+      enabled: true, id: "scatter", categoryIds: ["procedural"],
       thumbnail: { enabled: true, src: "assets/images/scatter.svg", alt: "Procedurally scattered forms on an isometric grid" },
       kicker: { enabled: true, value: "04 / ARTIST TOOLS" },
       title: { enabled: true, value: "Scatter studio" },
@@ -109,6 +109,14 @@ Portfolio.projects = {
       title: { enabled: true, value: "Fields of motion" },
       description: { enabled: true, value: "Finding rhythm in the unpredictable. A study of particles, flow, and motion." },
       tags: [{ enabled: true, text: { value: "Niagara" } }, { enabled: true, text: { value: "VFX" } }]
+    },
+    {
+      enabled: true, id: "pipeline", categoryIds: ["tools"],
+      thumbnail: { enabled: true, src: "assets/images/pipeline.svg", alt: "Connected nodes forming a procedural tool graph" },
+      kicker: { enabled: true, value: "06 / PIPELINE DEVELOPMENT" },
+      title: { enabled: true, value: "A better workflow" },
+      description: { enabled: true, value: "Less repetition, more creation. Connecting the steps between idea and engine." },
+      tags: [{ enabled: true, text: { value: "Python" } }, { enabled: true, text: { value: "Pipeline" } }]
     },
     {
       enabled: true, id: "pipeline", categoryIds: ["tools"],

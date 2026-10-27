@@ -2,7 +2,7 @@
    Duplicate any section or media item. There is no fixed item limit.
    These are illustrative samples, not claims about your past work. */
 Portfolio.projectContent = {
-  terrain: {
+  terrain: {// Procedural water shader in Unity
     enabled: true,
     description: { enabled: true, value: "Explore the real-time functionality and visual results of the shader, highlighting its key features, dynamic effects, and customization capabilities in Unity." },
     sections: [
@@ -29,25 +29,35 @@ Portfolio.projectContent = {
         mediaGrid: { columns: 1 },
         videos: [{ enabled: true, url: "https://youtu.be/7dablWvO-4g", title: "Big Buck Bunny — demonstration video", thumbnail: { enabled: true, src: "assets/images/Water.svg", alt: "Demo video placeholder — replace with your own thumbnail" }, caption: { enabled: false, value: "External demo video · Replace before publishing" } }]
       }
+      
     ]
   },
-  iridescence: {
+  iridescence: {// Procedural 2D Wind Shader in Unity
     enabled: true,
     description: { enabled: true, value: "A sample material exploration. Describe your artistic target, rendering approach, and the compromises you made." },
     sections: [
-      { enabled: true, type: "image", title: { enabled: true, value: "Light as a material" }, description: { enabled: true, value: "Use this space for shader comparisons, lighting passes, and final renders." }, mediaGrid: { columns: 1 }, images: [{ enabled: true, src: "assets/images/iridescence.svg", alt: "Iridescent sphere study", caption: { enabled: true, value: "Illustrative material study" } }] },
-      { enabled: true, type: "code", title: { enabled: true, value: "A view-dependent color ramp" }, description: { enabled: true, value: "Illustrative HLSL for a simple rim-based tint." }, blocks: [{ enabled: true, name: { enabled: true, value: "Iridescence.hlsl" }, language: "hlsl", code: "float facing = saturate(dot(normalize(N), normalize(V)));\nfloat rim = pow(1.0 - facing, RimPower);\nfloat3 tint = lerp(BaseColor, EdgeColor, rim);\nreturn tint;" }] }
+          
+      {
+        enabled: true, type: "video", id: "terrain-video",
+        title: { enabled: true, value: "See it in motion" },
+        description: { enabled: true, value: "Video slot demonstration: Watch the shader in action, showcasing its visual effects, dynamic features, and real-time customization in Unity." },
+        mediaGrid: { columns: 1 },
+        videos: [{ enabled: true, url: "https://youtu.be/Eu5yPbEBqf8", title: "Demo video", thumbnail: { enabled: true, src: "assets/images/Wind.svg", alt: "Demo video placeholder — replace with your own thumbnail" }, caption: { enabled: false, value: "External demo video · Replace before publishing" } }]
+      }
+      
     ]
   },
-  morphbound: {
-    enabled: false,
-    description: { enabled: true, value: "MorphBound is an illustrative project title. Replace this introduction with your game jam brief, role, team, and contribution." },
+  morphbound: {// Disolve Shader in Unity
+    enabled: true,
+    description: { enabled: true, value: "Combined procedural Wind and Dissolve effects in Unity Shader Graph to create dynamic 2D sprite animations with customizable wind movement and smooth dissolve transitions." },
     sections: [
-      { enabled: true, type: "image", title: { enabled: true, value: "A world between states" }, description: { enabled: true, value: "Show your game world, mechanics, and visual development here." }, mediaGrid: { columns: 1 }, background: { enabled: true, colors: ["#1d242d", "#151c19"], angle: 145, opacity: 1 }, images: [{ enabled: true, src: "assets/images/morphbound.svg", alt: "Imaginary MorphBound world", caption: { enabled: true, value: "Original vector concept / demonstration content" } }] },
-      { enabled: true, type: "code", title: { enabled: true, value: "From idea to behavior" }, description: { enabled: true, value: "Separate files can live in the same section. Add as many blocks as you need." }, blocks: [
-        { enabled: true, name: { enabled: true, value: "Enemy.h" }, language: "cpp", code: "#pragma once\n\nclass Enemy\n{\npublic:\n    void Update(float deltaTime);\nprivate:\n    float phase = 0.0f;\n};" },
-        { enabled: true, name: { enabled: true, value: "Enemy.cpp" }, language: "cpp", code: '#include "Enemy.h"\n\nvoid Enemy::Update(float deltaTime)\n{\n    phase += deltaTime;\n    // Your gameplay logic here.\n}' }
-      ] }
+      {
+        enabled: true, type: "video", id: "terrain-video",
+        title: { enabled: true, value: "See it in motion" },
+        description: { enabled: true, value: "Video slot demonstration: Watch the shader in action, showcasing its visual effects, dynamic features, and real-time customization in Unity." },
+        mediaGrid: { columns: 1 },
+        videos: [{ enabled: true, url: "https://youtu.be/4KV15ENQ8oU", title: "Demo video", thumbnail: { enabled: true, src: "assets/images/Dissolve.svg", alt: "Demo video placeholder — replace with your own thumbnail" }, caption: { enabled: false, value: "External demo video · Replace before publishing" } }]
+      }
     ]
   },
   scatter: {
